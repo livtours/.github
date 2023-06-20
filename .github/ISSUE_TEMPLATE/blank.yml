@@ -1,0 +1,42 @@
+name: Blank Issue
+description: Create a blank issue.
+body: 
+  # - type: dropdown
+  #   id: type
+  #   attributes:
+  #     label: Type of issue
+  #     options:
+  #       - Chore
+  #       - Docs
+  #       - Idea
+  #       - Project
+  #       - Refactor
+  #       - Security
+  #       - Test
+  - type: textarea
+    id: description
+    attributes:
+      label: ✏️ Description of issue
+      description: Type out a detailed description of the issue
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: 📍 Location of issue
+      description: Whereabouts did you encounter this issue (ie. page url and name) ?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📸 Screenshots
+      description: | 
+        Include any pictures / screenshots of the bug in action
+        Drag any picture from your Finder/Desktop in the below text box provided
+  - type: textarea
+    id: useful-info-other
+    attributes:
+      label: ℹ️ Other useful information
+      description: Please include any other necessary information about the bug you're experiencing.
+      value: |
+          <!-- Product Ids (if applicable): (ie. [ 10, RF5hY, 889FVVS ]) -->

@@ -1,0 +1,61 @@
+name: Feature Request
+description: Suggest an improvement for our application
+labels: [ 'type:feature' ]
+body:
+  - type: markdown
+    attributes:
+      value:  |
+        ### :heavy_plus_sign: &nbsp; Hello there, so you want to enhance our platform. Wooooo!!! 
+        Please be as detailed as possible :smile:
+        <br>
+
+  - type: textarea
+    id: aim-or-motivation
+    attributes:
+      label: 🏹   Aim, Motivation behind feature
+      description: |
+        What is the sole purpose of this feature ? What does the feature aim to achieve ?
+        Motivation behind the feature in question ?
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: ✏️   Description of desired feature
+      description: Description of changes included in the PR ?
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: 📍   Designated page for feature
+      description: Whereabouts should the new feature be implemented (ie. page url and name) ?
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: ✅   Benefits of feature
+      description: What are the possible benefits of this feature being implemented ?
+      value: |
+         1. ......
+         2. etc...   
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🎨   Design Ideas (if applicable)
+      description: | 
+        Include any pictures / screenshots of the design you desire
+        Drag any picture from your Finder/Desktop in the below text box provided
+  - type: textarea
+    id: reporter-details
+    attributes:
+      label: 👀   Reporter Details
+      description: Please include your name and livtours email for us to identify the reporter
+      value: |
+         NAME: UPDATE_TEXT_HERE
+         EMAIL: UPDATE_TEXT_HERE
+  - type: markdown
+    attributes:
+        value:  |
+          And you're done, thanks for contributing.
+          Have a lovely day 🤗
