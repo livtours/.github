@@ -1,6 +1,6 @@
 name: Blank Issue
 description: Create a blank issue.
-body: 
+body:
   # - type: dropdown
   #   id: type
   #   attributes:
@@ -30,7 +30,7 @@ body:
   - type: textarea
     attributes:
       label: 📸 Screenshots
-      description: | 
+      description: |
         Include any pictures / screenshots of the bug in action
         Drag any picture from your Finder/Desktop in the below text box provided
   - type: textarea
