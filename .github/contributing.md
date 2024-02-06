@@ -10,7 +10,7 @@ Upon tackling a new issue in our codebase,
 
 2. Create your new branch following the convention as follows:
 
-`{ISSUE-TYPE}/{ISSUE-ID}/{ISSUE-DESCRIPTION}`
+`{ISSUE-ID}/{ISSUE-DESCRIPTION}`
 
 where:
 
@@ -31,7 +31,6 @@ where:
 
   The id must:
    - be unique
-   - contain a precursory hashtag
 
   This can be found here:
 
@@ -194,7 +193,7 @@ If changes are requested,
 <br>
 
 > General Terms:<br>
-- Every PR __must__ request `2` reviewers.<br>
+- Every PR __must__ (if ability prohibits this) request `2` reviewers.<br>
 - Every PR __requires__ approval by at least `one` other developer.<br>
 
   A caveat is when the PR is from a junior dev; then it must be reviewed by at least one `senior or experienced` developer.
