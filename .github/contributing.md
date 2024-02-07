@@ -14,19 +14,6 @@ Upon tackling a new issue in our codebase,
 
 where:
 
-- ISSUE-TYPE: One of the issue type label group prefixes specified in the `GH labels`
-      documentation or currently in place on Github.
-
-      FEAT = type:feature
-      BUG = type:bug
-      CHORE = type:chore
-      REF = type:refactor
-      PROJ = type:project
-
-      (eg. FEAT, BUG, CHORE, DOCS, TEST, REF, PROJ, etc..)
-
-<br>
-
 - ISSUE-ID: This the id automatically generated when the issue is created on Github.
 
   The id must:
@@ -53,9 +40,9 @@ where:
   <br>
 
   A few examples of sample branches:
-    1. `FEAT/#567/format-paragraphs-acc-page`
-    2. `REF/#78/modify-cart-request-logic`
-    3. `DOCS/#69/add-organisation-level-code-contribution-file`
+    1. `567/format-paragraphs-acc-page`
+    2. `78/modify-cart-request-logic`
+    3. `69/add-organisation-level-code-contribution-file`
 
 <br>
 
@@ -194,12 +181,7 @@ If changes are requested,
 
 > General Terms:<br>
 - Every PR __must__ (if ability prohibits this) request `2` reviewers.<br>
-- Every PR __requires__ approval by at least `one` other developer.<br>
-
-  A caveat is when the PR is from a junior dev; then it must be reviewed by at least one `senior or experienced` developer.
-
-- `It is advisable to request a review for a PR to everyone who could provide relevant contribution or has stakes in the code`
-
+- For every PR, request a review from anyone who could provide relevant insight or has stakes into the modified code.<br>
 
 <br>
 
