@@ -23,34 +23,34 @@
 
 - This is the same when referencing only a PR ( eg. pr:*)
 
-- Github default labels only describe one label group (aka, type) , this is not useful when concerned with PRs and other label groups are necessary 
+- Github default labels only describe one label group (aka, type) , this is not useful when concerned with PRs and other label groups are necessary
 
 - The label group of priority should only be used once absolutely necessary therefore a decision was made to omit priority:low or any equivalent
 
 - This would lead to task being passed over and is a suboptimal scenario.
 
-- Github’s UI should render some tags discussed in thought process of decision-making as futile. 
+- Github’s UI should render some tags discussed in thought process of decision-making as futile.
 <br>For example, state:closed or state:approved.
 
-- Once a PR is closed, an extra burden is placed upon someone to place closed label on PR. 
+- Once a PR is closed, an extra burden is placed upon someone to place closed label on PR.
 <br>This is not necessary as UI marks PRs closed independent of labels.
 <br>Same with an issue, an issue is never likely to be rendered approved.
 
-- Prefixes absolutely matter as aforementioned, labels get chaotic without them. 
+- Prefixes absolutely matter as aforementioned, labels get chaotic without them.
 <br>
 <br>
 
-The prefixes chosen are : 
+The prefixes chosen are :
 
 | Tag | Description |
 | ----------- | ----------- |
-| ![Effort Tag]./resources/doc-images/effort-prefix-box.svg) | Relative effort involved, scaled using fibonacci from 1 to 13  |
-| ![Priority Tag]./resources/doc-images/priority-prefix-box.svg) | Designate immediacy of task involved |
-| ![State Tag]./resources/doc-images/state-prefix-box.svg) | Description of state of Issue or PR |
-| ![Type Tag]./resources/doc-images/type-prefix-box.svg) | Description of <span style="color: #EF927B;">issue</span> involved  |
-| ![Work Tag]./resources/doc-images/work-prefix-box.svg) | Description of situation/complexity involved in bringing feature into fruition, or task to completion |
-| ![*:PR:* Tag]./resources/doc-images/pr-prefix-box.svg) | Any label <span style="color: #EF927B;">only</span> applicable to PRs |
-| ![*:Issue:* Tag]./resources/doc-images/issue-prefix-box.svg) | Any label <span style="color: #EF927B;">only</span> applicable to Issues |
+| ![Effort Tag](./resources/doc-images/effort-prefix-box.svg) | Relative effort involved, scaled using fibonacci from 1 to 13  |
+| ![Priority Tag](./resources/doc-images/priority-prefix-box.svg) | Designate immediacy of task involved |
+| ![State Tag](./resources/doc-images/state-prefix-box.svg) | Description of state of Issue or PR |
+| ![Type Tag](./resources/doc-images/type-prefix-box.svg) | Description of <span style="color: #EF927B;">issue</span> involved  |
+| ![Work Tag](./resources/doc-images/work-prefix-box.svg) | Description of situation/complexity involved in bringing feature into fruition, or task to completion |
+| ![*:PR:* Tag](./resources/doc-images/pr-prefix-box.svg) | Any label <span style="color: #EF927B;">only</span> applicable to PRs |
+| ![*:Issue:* Tag](./resources/doc-images/issue-prefix-box.svg) | Any label <span style="color: #EF927B;">only</span> applicable to Issues |
 
 <br>
 The only labels without prefixes are breaking, and help-needed
@@ -60,7 +60,7 @@ The only labels without prefixes are breaking, and help-needed
 ## Label Explanations
 
 | Standard | Description | Priority | State | Type | Work
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | <p>Standard labels commonly used in most repositories.</p> | <p>Describes the relative effort to complete an issue or pull request.<p> | <p>Priority labels, but focused on describing the immediacy of attention required.<p> | <p>Describes the decision state of the issue or pull request.<p> | <p>Describes the type of issue or pull request.<p> | <p>Describes the kind of work involved in resolving the issue, using the [Cynefin framework](https://en.wikipedia.org/wiki/Cynefin_framework).<p> |
 | <hr> | <hr> | <hr> | <hr> | <hr> | <hr> |
 | <img src="./resources/doc-images/breaking-label-btn.svg" style="width: 28vw; height: 10vh;" alt="Breaking Tag"> | <img src="./resources/doc-images/effort-1-label-btn.svg" style="width: 28vw; height: 10vh;" alt="Effort-1 Tag"> | <img src="./resources/doc-images/downtime-priority-label-btn.svg" style="width: 28vw; height: 10vh;" alt="Downtime Priority Tag">| <img src="./resources/doc-images/state-blocked-label-btn.svg" style="width: 28vw; height: 10vh;" alt="Blocked State Tag"> | <img src="./resources/doc-images/type-bug-label-btn.svg" style="width: 28vw; height: 10vh;" alt="Bug Type Tag"> | <img src="./resources/doc-images/work-chaotic-label-btn.svg" style="width: 28vw; height: 10vh;" alt="Chaotic Work Tag"> |
@@ -185,7 +185,7 @@ As aforementioned, Github utilizes same labels across all of its product suite. 
 
 This formed the premise of my decision-making when it came to attaching labels to any product (PR or Issue). 
 
-#### PRs only have four states: 
+#### PRs only have four states:
 
 ##### <span style="color: #EF927B;">Needs Reviews (state : pr : nr) :</span> PR has been created, it is in progress and is seeking a reviewer
 ##### <span style="color: #EF927B;">Needs Changes (state : pr : nc) :</span> PR has been reviewed, it is of an unsatisfactory level to the reviewer. Changes need to be made
