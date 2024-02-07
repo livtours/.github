@@ -6,7 +6,7 @@ Livtours follows a series of operating procedures and conventions when contribut
 
 Upon tackling a new issue in our codebase,
 
-1. Checkout and pull `dev` branch (ie. default branch)
+1. Checkout and pull `default` branch (ie. `dev`, `staging`, etc..)
 
 2. Create your new branch following the convention as follows:
 
@@ -121,7 +121,7 @@ CI Github workflows and use of pre-commit hooks by `Husky` make this possible.
 
   __Unit Tests__: These are tests that focus on individual components or functions in isolation. They are typically low-level tests.
 
-  __Mid-Level Tests (Integration Tests)__: These tests focus on the integration between different components or modules. They ensure that these components work together as expected. These could be considered mid-level tests.
+  __Integration Tests (ie. MLT's)__: These tests focus on the integration between different components or modules. They ensure that these components work together as expected. These could be considered mid-level tests.
 
   __End-to-End Tests__: These tests simulate real-world scenarios and interactions, typically spanning multiple components or even the entire application. They can be considered higher-level tests.
 
@@ -180,20 +180,20 @@ If changes are requested,
 <br>
 
 > General Terms:<br>
-- Every PR __must__ (if ability prohibits this) request `2` reviewers.<br>
-- For every PR, request a review from anyone who could provide relevant insight or has stakes into the modified code.<br>
 
+- For every PR, request a review from anyone who could provide relevant insight or has stakes into the modified code.<br>
+- Every PR __requires__ approval by at least `one` other developer.<br>
 <br>
 
-If changes elsewhere are pushed to the `dev` branch, your branch will need to pick up these new changes before adding your changes on top.
+If changes elsewhere are pushed to the `target` (ie. `dev`, `staging`) branch, your branch will need to pick up these new changes before adding your changes on top.
 
-This inevitably means any branches that are at PR or review stage will need to be rebased with `dev` before merging
+This inevitably means any branches that are at PR or review stage will need to be rebased with `target` (ie. `dev`, `staging`) branch before merging
 
 1. Navigate to the local branch you are completing the changes upon.
-2. Execute `git rebase dev`.
+2. Execute `git rebase ${TARGET_BRANCH(ie. dev)}`.
 3. Observe potential merge conflicts
-- If yes, resolve merge conflicts and execute `git rebase --continue` to resume the merge of `dev` new code into your branch
-- If no, message indicates `Successfully rebased with dev` in CLI
+- If yes, resolve merge conflicts and execute `git rebase --continue` to resume the merge of `target` (ie. `dev`, `staging`) branch new code into your branch
+- If no, message indicates `Successfully rebased with ${TARGET_BRANCH(ie. dev)` in CLI
 
 <br>
 
